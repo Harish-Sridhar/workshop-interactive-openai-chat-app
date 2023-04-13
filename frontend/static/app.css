@@ -1,0 +1,142 @@
+
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 0.8rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  canvas {
+    display: block;
+    margin-bottom: 0.5rem;
+  }  
+.app {
+      background: white none;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+    }
+
+.appPane {
+      border: 1px solid black;
+      height: 100%;
+      width: 50%
+}
+
+.chatWindow{
+    border: 1px solid black;
+    width: 80vw;
+    height: 60vh;
+    background-color: #f5f4e8;
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+    padding: 5px;
+}
+
+.chatFeed {
+  bottom: 2px;
+}
+
+.recordWindow {
+    border: 1px solid black;
+    height: 30vh;
+    background-color: #eec60a;
+    padding: 10px;
+}
+
+
+.userText {
+    background-color: #ffaaa5;
+    color: black;
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight:100;
+    text-align: left;
+    border: 2px solid #e9c46a;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.botText {
+  background-color: #f8da5b;
+  color: black;
+  font-size: medium;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight:100;
+  text-align: right;
+  border: 2px solid #e9c46a;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.answerBox {
+  margin-top: 20px;
+
+}
+
+/* Clear floats */
+.botText::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.userText::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Style images */
+.userText img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Style the right image */
+.botText img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.centerChild {
+  display: flex;
+  justify-content: center;
+}
+
+
+.centerChildFlexColumn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hideElement {
+  display: none;
+  visibility: hidden;
+}
+
+.showElement {
+  display: block;
+  visibility: visible;
+}
