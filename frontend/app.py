@@ -115,6 +115,7 @@ def transcribeAudio(audio_file_path: str) -> str:
 Task 2: use the openai "text-curie-001" model to complete the user prompt ..
 Note: use "text-curie-001" model as it is small and faster and also cost effective.
 Note: provide OPENAPI_KEY as environment variable to prevent secrets in code.
+Use max_tokens as 2000 to be able to get longer response from chat gpt model. 
 """
 
 def completePrompt(prompt: str) -> str:

@@ -1,9 +1,11 @@
 # Whisper
 
-[Whisper](https://github.com/openai/whisper) is a opensource general-purpose speech recognition model provided by open ai.
+[Whisper](https://github.com/openai/whisper) is a general-purpose speech recognition model provided by open ai.
 
 
 # Install whisper
+
+Note: Skip this part if you completed instructions in `01-setting-up.md`.
 
 * create venv.
     
@@ -34,13 +36,19 @@
     # on Windows using Scoop (https://scoop.sh/)
     scoop install ffmpeg
 
+# create a voice recording.
 
-# transcribe audio
+* Using an online/ offline audio recorder create a audio file. 
+
+
+# transcribe audio using whisper ai
+
+create a python file `test_whisper.py` and use the following code.
 
     ```
         import whisper
 
     model = whisper.load_model("base")
-    result = model.transcribe("audio.mp3")
+    result = model.transcribe(<enter-path-to-audio-file.>)
     print(result["text"])
     ``` 

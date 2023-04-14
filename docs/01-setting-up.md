@@ -1,6 +1,6 @@
 # Pre-requisties
 
-* python `3.9.9`.
+* python `3.9.9`. (note at the moment having issues with installing torch in other versions..)
 * Create an account in openai and create a API Key.
 
 https://platform.openai.com/docs/introduction
@@ -35,10 +35,3 @@ https://platform.openai.com/docs/introduction
 
     # on Windows using Scoop (https://scoop.sh/)
     scoop install ffmpeg
-
-
-# Testing the app
-
-    ./.venv/bin/python frontend/app.py
-
-then go to the url `http://127.0.0.1:5000/`
